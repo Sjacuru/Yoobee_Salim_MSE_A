@@ -6,7 +6,7 @@ def factorial():
         if i == 0:
             fn = 1
         else:
-            fn = fn * (i + 1)
+            fn = fn * (i + 1) 
     print(fn)
 
 if __name__ == "__main__":
