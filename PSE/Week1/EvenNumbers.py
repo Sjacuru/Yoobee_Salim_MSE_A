@@ -6,6 +6,5 @@ def evenNumber():
         total += i
     print ("Result ", total)
 if __name__ == "__main__":
-    
     ans = evenNumber()
 
