@@ -28,13 +28,6 @@ def cels_to_fahr():
         temp_far = temp_cel * 9/5 + 32
         print ("Temperature in Celsius in ", i, " is :", temp_cel, "=", temp_far, "degrees Fahrenheit")
         i = i + 1
-    
-    #temp_list_t = numpy.array(temp_list)
-    
-
-
-
-
 
 if __name__ == "__main__":
     ans = cels_to_fahr()
