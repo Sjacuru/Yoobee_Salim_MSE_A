@@ -12,7 +12,7 @@ def cels_to_fahr():
     #above_20 = temp_list_t > 20 # AI alternative to show elements above 20
     #print ("Temperatures above 20°C are: ", temp_list_t[above_20]) # AI alternative to show elements above 20
 
-    avg = 0
+    avg = 0 
     total = 0
     for temp in temp_list:
         total += temp
