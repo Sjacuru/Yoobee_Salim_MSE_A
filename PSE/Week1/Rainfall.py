@@ -5,9 +5,9 @@ def rainanalysis():
 
     print(rainarray)
 
-    print("The total amount of rain for the period was ",round(np.sum(rainarray),2))
+    print("The total amount of rain for the period was ",round(np.sum(rainarray),2), "mm")
 
-    print("The average amount of rain for the period was ", round(np.mean(rainfall),2))
+    print("The average amount of rain for the period was ", round(np.mean(rainfall),2), "mm")
     
     days = 0
     for day in rainfall:
@@ -15,7 +15,7 @@ def rainanalysis():
             days += 1
     print("There was no rain on", days, "days")
 
-    print("There was no rain on", np.sum(rainarray == 0.0), "days") #AI alternative
+    print("There was no rain on", np.sum(rainarray == 0.0), "days - AI alternative") #AI alternative
 
 if __name__ == "__main__":
     ans = rainanalysis()
