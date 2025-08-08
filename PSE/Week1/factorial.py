@@ -1,5 +1,5 @@
 def factorial():
-    number = input("Inut a number: ")
+    number = input("Input a number: ")
     fn = int(number)
     i = 1
     for i in range(fn):
