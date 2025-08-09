@@ -15,6 +15,7 @@ def guessGame():
     
     while lives>0: 
         userGuess = input("Guess a letter: ")
+        
         print("Chosen letter: ", userGuess)
     
         for i in range(len(total)):
