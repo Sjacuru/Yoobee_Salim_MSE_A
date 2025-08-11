@@ -1,65 +1,61 @@
 import random
 
 def guessGame():
-    word = random.choice(['goaal', 'staairs', 'paaint'])
+    # Create a random word and store it in word variable
+    word = random.choice(['goal', 'stairs', 'paint'])
+    count = 0
+
+    # Create blank spaces for the word to be guessed
     guess = []
-    tries = []
+    attemptsLst = []
 
     for letter in range(len(word)):
         guess.append("_")
     print(guess)
 
+    # Number of attempts for the guessing user
     lives = 10
-    total = []
-    partial = []
-    
-    while lives>0: 
-        userGuess = input("Guess a letter: ")
-        
-        print("Chosen letter: ", userGuess)
-    
-        for i in range(len(total)):
-            if userGuess == total[i]:
-                
 
+    while lives > 0: 
+        userGuess = input("Guess a letter: ").lower()
 
-            
+        # Check if one letter only was given and if it was not a number
+        if len(userGuess) != 1:
+            print("Enter only one letter at a time")
+            print("You still have", lives, "lives")
+            print(guess)
+            continue
+        elif not userGuess.isalpha():
+            print("Numbers are not valid, please enter a letter")
+            print("You still have", lives, "lives")
+            print(guess)
+            continue
 
-        total.append(userGuess)   
-        print("Total", total)     
-            
-       
+        # Check if the letter was already used and count how many attempts occurred 
+        if userGuess in attemptsLst:
+            print("You already tried this letter")
+            print("You still have", lives, "lives")
+        elif userGuess not in word:
+            lives -= 1
+            print("You have", lives, "lives remaining")
+        else:
+            count += 1
+        attemptsLst.append(userGuess)
 
-        for letter in range(len(word)):
-            if word[letter] == userGuess:
-                partial.append(word[letter]) 
-            elif word[letter] != userGuess:
-                partial.append("_") 
-        print(partial)
-        print("Remaining lives", lives)
-        lives -= 1
+        # Check for matches in the chosen word
+        for i in range(len(word)):
+            if userGuess == word[i]:
+                guess[i] = word[i]
 
+        print(guess)
+        print("You have", lives, "lives remaining")
 
+        if lives == 0:
+            print("Game Over. Try again")
 
-        #if letter%2 == 0:
-        #    guess.append("_")
-        #else:    
-        #    guess.append(word[letter])
-        
-        #print (guess)
-                
-
-
-        #al = random.randrange(len(word))
-        #print(al)
-        #if al/2 == 0:
-        #    guess[letter] = word[letter-1]
-        #    print("Control", guess)
-            #if letter == 0:
-            #    i = 1
-            #elif letter == len(word):
-            #    i = len(word) - 1
-    
+        if "_" not in guess:
+            print("Congratulations! You got it!!! The word was:", word)
+            break
 
 if __name__ == "__main__":
-    ans = guessGame()
+    guessGame()
