@@ -7,10 +7,10 @@ import matplotlib.pyplot as plt  # Required to display the plot
 qc = qk.QuantumCircuit(1)
 
 # Apply Hadamard gate to create superposition
-#qc.h(0)
+qc.h(0)
 
 # Initialize to |1⟩ by applying X-gate to |0⟩
-qc.x(0)  # X-gate flips |0⟩ to |1⟩
+#qc.x(0)  # X-gate flips |0⟩ to |1⟩
 
 # Get the statevector
 statevector = Statevector.from_instruction(qc)
