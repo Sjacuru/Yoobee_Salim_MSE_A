@@ -7,7 +7,11 @@ import matplotlib.pyplot as plt  # Required to display the plot
 qc = qk.QuantumCircuit(1)
 
 # Apply Hadamard gate to create superposition
-qc.h(0)
+#qc.h(0)
+
+#qc.z(1)
+
+qc.y(0)
 
 # Initialize to |1⟩ by applying X-gate to |0⟩
 #qc.x(0)  # X-gate flips |0⟩ to |1⟩
@@ -21,4 +25,4 @@ bloch_sphere = plot_bloch_multivector(statevector)
 # Display the plot
 plt.show()  # This is crucial to actually see the visualization
 
-#print(statevector)
+print(statevector)
