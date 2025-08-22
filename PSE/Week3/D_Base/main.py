@@ -54,11 +54,13 @@ def main():
             students = view_students()
             for student in students:
                 print(student)
+
         elif choice == '7':
             student_name = input("Enter name to search: ")
             students = search_student(student_name)
             for student in students:
                 print(student_name)
+        
         elif choice == '8':
             student_id = int(input("Enter user ID to delete: "))
             delete_student(student_id)

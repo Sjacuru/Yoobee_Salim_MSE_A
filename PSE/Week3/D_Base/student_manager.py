@@ -23,7 +23,7 @@ def view_students():
 def search_student(student_name):
     conn = create_connection_stu()
     cursor = conn.cursor()
-    cursor.execute("SELECT * FROM students WHERE name LIKE ?", ('%' + student_name + '%',))
+    cursor.execute("SELECT * FROM students WHERE student_name LIKE ?", ('%' + student_name + '%',))
     rows = cursor.fetchall()
     conn.close()
     return rows
