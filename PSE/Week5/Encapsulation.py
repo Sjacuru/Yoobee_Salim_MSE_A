@@ -11,6 +11,10 @@ class Student:
     def get_private(self):
         return self.__private
 
+    def updated_info(self):
+        self.__grade = 'A+'
+        return self.__grade
+
 class International(Student):
     def __init__(self, name, age):
         super().__init__(name, age)
@@ -33,6 +37,7 @@ def main():
     s = Student("Lea", 20)
     print("Student name " + s.name + " Age " + str(s._age))
     print("Grade: " + str(s.get_grade()))
+    print("Grade: " + str(s.updated_info()))
     print("Private: " + str(s.get_private()))
 
 
