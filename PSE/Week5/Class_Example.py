@@ -3,6 +3,10 @@ class Animal:
         self.__name = name       # private attribute
         self.__species = species # private attribute
     
+    #This get_name and set_name methods below correspond to the encapsulation and 
+    # allow to access and modify the private __name variable. Through 
+    # set_name is possible to access and modify the variable.
+
     # Getter for name
     def get_name(self):
         return self.__name
