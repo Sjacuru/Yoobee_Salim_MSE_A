@@ -11,7 +11,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-2" value="" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="145" y="170" width="15" height="30" as="geometry" />
+          <mxGeometry x="145" y="174" width="15" height="30" as="geometry" />
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-22" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;dashPattern=1 4;endArrow=none;endFill=0;" edge="1" parent="1" source="OK-tZQMdaLTncchBPFv1-5" target="OK-tZQMdaLTncchBPFv1-14">
           <mxGeometry relative="1" as="geometry" />
@@ -21,8 +21,8 @@
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-6" value="" style="endArrow=block;endFill=1;html=1;align=left;verticalAlign=top;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OK-tZQMdaLTncchBPFv1-2" target="OK-tZQMdaLTncchBPFv1-14">
           <mxGeometry x="-1" relative="1" as="geometry">
-            <mxPoint x="470" y="250" as="sourcePoint" />
-            <mxPoint x="380" y="170" as="targetPoint" />
+            <mxPoint x="470" y="254" as="sourcePoint" />
+            <mxPoint x="380" y="174" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-13" value="Fill the form&amp;nbsp;&lt;div&gt;with your personal information&lt;/div&gt;&lt;div&gt;Name, e-mail, address, phone number&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OK-tZQMdaLTncchBPFv1-6">
@@ -34,22 +34,22 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-9" value="" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="145" y="305" width="15" height="30" as="geometry" />
+          <mxGeometry x="145" y="313" width="15" height="30" as="geometry" />
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;dashed=1;dashPattern=1 2;" edge="1" parent="1" source="OK-tZQMdaLTncchBPFv1-10" target="OK-tZQMdaLTncchBPFv1-9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-10" value="" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="145" y="239" width="15" height="30" as="geometry" />
+          <mxGeometry x="145" y="243" width="15" height="30" as="geometry" />
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-14" value="" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="420" y="170" width="15" height="30" as="geometry" />
+          <mxGeometry x="420" y="174" width="15" height="30" as="geometry" />
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;dashed=1;dashPattern=1 2;" edge="1" parent="1" source="OK-tZQMdaLTncchBPFv1-15" target="OK-tZQMdaLTncchBPFv1-36">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-15" value="" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="420" y="305" width="15" height="30" as="geometry" />
+          <mxGeometry x="420" y="313" width="15" height="30" as="geometry" />
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;dashed=1;dashPattern=1 2;" edge="1" parent="1" source="OK-tZQMdaLTncchBPFv1-16" target="OK-tZQMdaLTncchBPFv1-15">
           <mxGeometry relative="1" as="geometry" />
@@ -58,7 +58,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-16" value="" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="420" y="239" width="15" height="30" as="geometry" />
+          <mxGeometry x="420" y="243" width="15" height="30" as="geometry" />
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-54" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;dashed=1;dashPattern=1 2;" edge="1" parent="1" source="OK-tZQMdaLTncchBPFv1-17" target="OK-tZQMdaLTncchBPFv1-28">
           <mxGeometry relative="1" as="geometry" />
@@ -68,8 +68,8 @@
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-24" value="" style="endArrow=block;endFill=1;html=1;align=left;verticalAlign=top;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OK-tZQMdaLTncchBPFv1-16" target="OK-tZQMdaLTncchBPFv1-10">
           <mxGeometry x="-1" relative="1" as="geometry">
-            <mxPoint x="160" y="389" as="sourcePoint" />
-            <mxPoint x="424" y="389" as="targetPoint" />
+            <mxPoint x="160" y="393" as="sourcePoint" />
+            <mxPoint x="424" y="393" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-25" value="Invalid Fields&lt;br&gt;Show validation errors" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OK-tZQMdaLTncchBPFv1-24">
@@ -79,8 +79,8 @@
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-26" value="" style="endArrow=block;endFill=1;html=1;align=left;verticalAlign=top;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OK-tZQMdaLTncchBPFv1-9" target="OK-tZQMdaLTncchBPFv1-15">
           <mxGeometry x="-1" relative="1" as="geometry">
-            <mxPoint x="390" y="205" as="sourcePoint" />
-            <mxPoint x="654" y="205" as="targetPoint" />
+            <mxPoint x="390" y="213" as="sourcePoint" />
+            <mxPoint x="654" y="213" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-27" value="All data are valid" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OK-tZQMdaLTncchBPFv1-26">
@@ -92,12 +92,12 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-28" value="" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="660" y="305" width="15" height="30" as="geometry" />
+          <mxGeometry x="660" y="313" width="15" height="30" as="geometry" />
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-29" value="" style="endArrow=block;endFill=1;html=1;align=left;verticalAlign=top;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OK-tZQMdaLTncchBPFv1-15" target="OK-tZQMdaLTncchBPFv1-28">
           <mxGeometry x="-1" relative="1" as="geometry">
-            <mxPoint x="340" y="295" as="sourcePoint" />
-            <mxPoint x="600" y="295" as="targetPoint" />
+            <mxPoint x="340" y="303" as="sourcePoint" />
+            <mxPoint x="600" y="303" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-30" value="Check for the existence of e-mail,&amp;nbsp;&lt;div&gt;phone number&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OK-tZQMdaLTncchBPFv1-29">
@@ -107,8 +107,8 @@
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-31" value="" style="endArrow=block;endFill=1;html=1;align=left;verticalAlign=top;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="OK-tZQMdaLTncchBPFv1-28" target="OK-tZQMdaLTncchBPFv1-15">
           <mxGeometry x="-1" relative="1" as="geometry">
-            <mxPoint x="380" y="305" as="sourcePoint" />
-            <mxPoint x="640" y="305" as="targetPoint" />
+            <mxPoint x="380" y="313" as="sourcePoint" />
+            <mxPoint x="640" y="313" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-32" value="Already registered" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OK-tZQMdaLTncchBPFv1-31">
@@ -118,8 +118,8 @@
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-33" value="" style="endArrow=block;endFill=1;html=1;align=left;verticalAlign=top;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;dashed=1;dashPattern=1 2;" edge="1" parent="1" source="OK-tZQMdaLTncchBPFv1-15" target="OK-tZQMdaLTncchBPFv1-9">
           <mxGeometry x="-1" relative="1" as="geometry">
-            <mxPoint x="705" y="325" as="sourcePoint" />
-            <mxPoint x="480" y="325" as="targetPoint" />
+            <mxPoint x="705" y="333" as="sourcePoint" />
+            <mxPoint x="480" y="333" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-34" value="Show error:&amp;nbsp;&lt;div&gt;&quot;Mobile or e-mail already exists&quot;&amp;nbsp;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OK-tZQMdaLTncchBPFv1-33">
@@ -128,24 +128,24 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-35" value="" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="145" y="444" width="15" height="30" as="geometry" />
+          <mxGeometry x="145" y="456" width="15" height="30" as="geometry" />
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;dashed=1;dashPattern=1 2;" edge="1" parent="1" source="OK-tZQMdaLTncchBPFv1-36" target="OK-tZQMdaLTncchBPFv1-46">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-36" value="" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="420" y="376" width="15" height="30" as="geometry" />
+          <mxGeometry x="420" y="384" width="15" height="30" as="geometry" />
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;dashed=1;dashPattern=1 2;" edge="1" parent="1" source="OK-tZQMdaLTncchBPFv1-37" target="OK-tZQMdaLTncchBPFv1-42">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-37" value="" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="660" y="376" width="15" height="30" as="geometry" />
+          <mxGeometry x="660" y="384" width="15" height="30" as="geometry" />
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-38" value="" style="endArrow=block;endFill=1;html=1;align=left;verticalAlign=top;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;dashed=1;dashPattern=1 2;" edge="1" parent="1" source="OK-tZQMdaLTncchBPFv1-37" target="OK-tZQMdaLTncchBPFv1-36">
           <mxGeometry x="-1" relative="1" as="geometry">
-            <mxPoint x="845" y="356" as="sourcePoint" />
-            <mxPoint x="620" y="356" as="targetPoint" />
+            <mxPoint x="845" y="364" as="sourcePoint" />
+            <mxPoint x="620" y="364" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-39" value="Not registered" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OK-tZQMdaLTncchBPFv1-38">
@@ -155,8 +155,8 @@
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-40" value="" style="endArrow=block;endFill=1;html=1;align=left;verticalAlign=top;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="OK-tZQMdaLTncchBPFv1-36" target="OK-tZQMdaLTncchBPFv1-37">
           <mxGeometry x="-1" relative="1" as="geometry">
-            <mxPoint x="733" y="376" as="sourcePoint" />
-            <mxPoint x="510" y="376" as="targetPoint" />
+            <mxPoint x="733" y="384" as="sourcePoint" />
+            <mxPoint x="510" y="384" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-41" value="Create new user and&amp;nbsp;&lt;div&gt;save fields&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OK-tZQMdaLTncchBPFv1-40">
@@ -165,12 +165,12 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-42" value="" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="660" y="444" width="15" height="30" as="geometry" />
+          <mxGeometry x="660" y="456" width="15" height="30" as="geometry" />
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-44" value="" style="endArrow=block;endFill=1;html=1;align=left;verticalAlign=top;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OK-tZQMdaLTncchBPFv1-42" target="OK-tZQMdaLTncchBPFv1-46">
           <mxGeometry x="-1" relative="1" as="geometry">
-            <mxPoint x="645" y="484" as="sourcePoint" />
-            <mxPoint x="440" y="454" as="targetPoint" />
+            <mxPoint x="645" y="496" as="sourcePoint" />
+            <mxPoint x="440" y="466" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-45" value="User Created" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OK-tZQMdaLTncchBPFv1-44">
@@ -179,12 +179,12 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-46" value="" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="420" y="444" width="15" height="30" as="geometry" />
+          <mxGeometry x="420" y="456" width="15" height="30" as="geometry" />
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-47" value="" style="endArrow=block;endFill=1;html=1;align=left;verticalAlign=top;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="OK-tZQMdaLTncchBPFv1-46" target="OK-tZQMdaLTncchBPFv1-35">
           <mxGeometry x="-1" relative="1" as="geometry">
-            <mxPoint x="845" y="444" as="sourcePoint" />
-            <mxPoint x="620" y="444" as="targetPoint" />
+            <mxPoint x="845" y="456" as="sourcePoint" />
+            <mxPoint x="620" y="456" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="OK-tZQMdaLTncchBPFv1-48" value="Show Sign Up&lt;div&gt;Success&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OK-tZQMdaLTncchBPFv1-47">
