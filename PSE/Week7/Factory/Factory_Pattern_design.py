@@ -1,6 +1,6 @@
 #In the original code, add or remove a payment method mneans 
-#the need to open the code and add or remove a class in Checkout.  
-#tat is tied to those implementations. In this code version checkout 
+#the need to open the code and add or remove a class in Checkout  
+#that is tied to those implementations. In this code version checkout 
 #abstracts any received processor, without dependending on classes.  
 
 
