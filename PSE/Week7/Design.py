@@ -27,16 +27,15 @@ def main():
     userService = UserService()
     orderService = OrderService()
     
-    start_time = time.process_time()
+    start_time = time.perf_counter()
     user = userService.get_user(1)
     print("User Details:", user)
     
     orders = orderService.get_orders(1)
     print("User Orders:", orders)
 
-    end_time = time.process_time()
-    print(f"Execution time: {end_time - start_time} seconds")
-
+    end_time = time.perf_counter()
+    print(f"Execution time: {end_time - start_time:.10f} seconds")
 
 if __name__ == '__main__':
     main()
