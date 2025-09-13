@@ -37,6 +37,7 @@ def main():
     end_time = time.process_time()
     print(f"Execution time: {end_time - start_time} seconds")
 
+
 if __name__ == '__main__':
     main()
 
