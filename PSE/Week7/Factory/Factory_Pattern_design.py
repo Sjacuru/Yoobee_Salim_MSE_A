@@ -25,7 +25,7 @@ class CreditCardPayment (PaymentProcessor):
     def process_payment(self, amount) -> str:
         return f"Processing ${amount:.2f} via Credit Card"
     
-#Client code - tightly coupled and repetitive
+#Client code - coupled and repetitive
 """def checkout (payment_method, amount):
     if payment_method == "paypal":
         processor = PayPalPayment() #Direct instantiation
