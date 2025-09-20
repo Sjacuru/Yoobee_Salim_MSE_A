@@ -68,7 +68,7 @@ class PaymentGateway:
     
 # 4) Client code (examples)
 def main():
-    factory = PaymentFactory
+    factory = PaymentFactory()
 
     paypal = factory.create_payment_method("paypal")
     print(paypal.process_payment(200.0))  
