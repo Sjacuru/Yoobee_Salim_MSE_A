@@ -1,14 +1,18 @@
-#Week 7 - Activity 4: Singeleton and  Factory design pattern (due date 25 Sep 2025 )
+'''
+Week 7 - Activity 4: Singeleton and  Factory design pattern (due date 25 Sep 2025 )
 
-#Develop a code to show the usage of both design patterns in your coding for; Design
-# a payment processing system that supports multiple payment methods (e.g., Creditcard,
-# PayPal, Bank Transfer, CryptoPayment, GooglePay).
+ Develop a code to show the usage of both design patterns in your coding for; Design
+ a payment processing system that supports multiple payment methods (e.g., Creditcard,
+ PayPal, Bank Transfer, CryptoPayment, GooglePay).
 
-# 1 - Use the Factory Design Pattern to create different payment method objects dynamically.
-# 2 - Ensure the payment gateway (the main entry point for processing payments) is implemented
-# as a Singleton, so only one instance of the gateway exists in the system.
+ 1 - Use the Factory Design Pattern to create different payment method objects dynamically.
+ 2 - Ensure the payment gateway (the main entry point for processing payments) is implemented
+ as a Singleton, so only one instance of the gateway exists in the system.
 
-#Explain your design choices and share your GitHub with code implementation.
+Explain your design choices and share your GitHub with code implementation.
+'''
+# Answer: 
+
 
 from abc import ABC, abstractmethod
 
@@ -81,7 +85,7 @@ def main():
 
     gateway = PaymentGateway()
 
-    test_amount = 200.9
+    test_amount = 200.0
 
     test_method = ["paypal", "stripe", "credit_card"]
 
