@@ -37,5 +37,20 @@ class TestMathOperations(unittest.TestCase):
             divide(10, 0)
         self.assertEqual(str(context.exception), "Cannot divide by zero")
 
+def add(a,b):
+    '''
+    Adds two numbers and returns the result.
+    >>> add(2, 3)
+    5
+    >>> add(-1, 1)
+    0
+    >>> add(0, 0)
+    1
+    '''
+
+    return a + b
+
 if __name__ == '__main__':
+    import doctest
+    doctest.testmod()
     unittest.main()
