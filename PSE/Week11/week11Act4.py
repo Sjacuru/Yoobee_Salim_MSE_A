@@ -1,3 +1,34 @@
+
+"""Week 11 - Activity 4: Implementing Doctest and Unittest in Python - 
+Due date:17.10.25 at midnight.  
+Update the testing section in Week 11  Activities 1 & 2 by implementing 
+doctesting or a combination of unittest and doctest (hybrid testing). 
+
+After completing the updates, share your GitHub repository link with 
+the revised code.
+""" 
+
+import doctest
+doctest.testmod()
+
+"""
+>>> Enter expense description: Groceries
+>>> Enter amount: 50.0
+Added: Groceries - $60.00       
+>>> Enter expense description: Power
+>>> Enter amount: 50.0 
+Added: Power - $40.00      
+>>> Enter expense description: Rent
+>>> Enter amount: 10.0
+Added: Rent - $30.00
+>>> Enter expense description: done
+>>> Total Expenses: $120.00
+>>> Expenses:  
+    - Groceries: $50.00
+    - Power: $40.00
+    - Rent: $30.00
+"""
+
 import unittest
 class Expense:
     # Represents a single expense with a description and amount.
@@ -72,24 +103,6 @@ def main():
     print("Personal Expense Tracker")
     print("Enter 'done' to finish adding expenses and see the total.")
 
-    """
-    >>> Enter expense description: Groceries
-    >>> Enter amount: 50.0
-    Added: Groceries - $60.00       
-    >>> Enter expense description: Power
-    >>> Enter amount: 50.0 
-    Added: Power - $40.00      
-    >>> Enter expense description: Rent
-    >>> Enter amount: 10.0
-    Added: Rent - $30.00
-    >>> Enter expense description: done
-    >>> Total Expenses: $120.00
-    >>> Expenses:  
-        - Groceries: $50.00
-        - Power: $40.00
-        - Rent: $30.00
-    """
-
     while True:
         description = input("Enter expense description: ").strip()
         if description.lower() == 'done':
@@ -110,6 +123,5 @@ def main():
             print(f"  - {exp}")
 
 if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
+
     main()
