@@ -1,127 +1,79 @@
-
-"""Week 11 - Activity 4: Implementing Doctest and Unittest in Python - 
-Due date:17.10.25 at midnight.  
-Update the testing section in Week 11  Activities 1 & 2 by implementing 
-doctesting or a combination of unittest and doctest (hybrid testing). 
-
-After completing the updates, share your GitHub repository link with 
-the revised code.
-""" 
-
-import doctest
-doctest.testmod()
-
-"""
->>> Enter expense description: Groceries
->>> Enter amount: 50.0
-Added: Groceries - $60.00       
->>> Enter expense description: Power
->>> Enter amount: 50.0 
-Added: Power - $40.00      
->>> Enter expense description: Rent
->>> Enter amount: 10.0
-Added: Rent - $30.00
->>> Enter expense description: done
->>> Total Expenses: $120.00
->>> Expenses:  
-    - Groceries: $50.00
-    - Power: $40.00
-    - Rent: $30.00
-"""
-
 import unittest
-class Expense:
-    # Represents a single expense with a description and amount.
-    def __init__(self, description: str, amount: float):
-        if amount < 0:
-            raise ValueError("Amount must be non-negative.")
-        self.description = description
-        self.amount = amount
-    def __str__(self):
-        return f"{self.description}: ${self.amount:.2f}"
+import doctest
+
+def add(a, b):
+    '''
+    >>> add(2, 3)
+    5
+    >>> add(-1, 1)
+    0
+    >>> add(0, 0)
+    0  # Corrected from the original code
+    '''
+    return a + b    
+
+def subtract(a, b):  
+    '''
+    >>> subtract(10, 5)
+    5
+    >>> subtract(0, 0)
+    0
+    >>> subtract(-1, 1)
+    -2
+    '''
+    return a - b    
+
+def multiply(a, b): 
+    '''
+    >>> multiply(3, 4)
+    12
+    >>> multiply(0, 5)
+    0
+    >>> multiply(-2, 3)
+    -6
+    '''
+    return a * b        
+
+def divide(a, b):   
+    '''
+    >>> divide(10, 2)
+    5.0
+    >>> divide(10, 3)
+    3.3333333333333335  # Note: Floating-point results may vary slightly
+    >>> divide(5, 1)
+    5.0
+    '''
+    if b == 0:
+        raise ValueError("Cannot divide by zero")
+    return a / b    
+
+class TestMathOperations(unittest.TestCase):
+
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 1)  #  fail
+
+    def test_subtract(self):
+        self.assertEqual(subtract(10, 5), 5)
+        self.assertEqual(subtract(0, 0), 1)  # fail
+
+    def test_multiply(self):
+        self.assertEqual(multiply(3, 4), 11)  # 
+        self.assertEqual(multiply(3, 4), 12)  # fail
+
+    def test_divide(self):
+        self.assertEqual(divide(10, 2), 5)
+        self.assertEqual(divide(10, 0), 0)  # fail
+
+    def test_divide_by_zero(self):
+        with self.assertRaises(ValueError) as context:
+            divide(10, 0)
+        self.assertEqual(str(context.exception), "Cannot divide by zero")
+
+if __name__ == '__main__':
+    # Run doctests first
+    import doctest
+    doctest.testmod()
     
-class ExpenseTracker:
-    # Manages a collection of expenses. Supports adding expenses and calculating totals.
-    def __init__(self):
-        self._expenses = []  # Private list to encapsulate data
-
-    def add_expense(self, description: str, amount: float):
-        # Adds a new expense to the tracker.
-        expense = Expense(description, amount)
-        self._expenses.append(expense)
-
-    def get_total_expense(self) -> float:
-        # Calculates and returns the total amount of all expenses.
-        return sum(exp.amount for exp in self._expenses)
-    
-    def get_expenses(self) -> list:
-        # Returns the list of expenses (for display or further use).
-        return self._expenses[: ]  # Return a copy to avoid external modification
-
-# Unit Tests
-class TestExpenseTracker(unittest.TestCase):
-    def setUp(self):
-        self.tracker = ExpenseTracker()
-
-    def test_add_expense(self):
-        self.tracker.add_expense("Groceries", 50.0)
-        self.tracker.add_expense("Power", 40.0)
-        self.tracker.add_expense("Rent", 30.0)
-        self.tracker.add_expense("Car", 0.0)
-        self.assertEqual(len(self.tracker.get_expenses()), 4)
-        self.assertEqual(len(self.tracker.get_expenses()), 0)
-        self.assertEqual(self.tracker.get_expenses()[0].description, "Groceries")
-        self.assertEqual(self.tracker.get_expenses()[1].description, "Groceries")
-        self.assertEqual(self.tracker.get_expenses()[10].description, "Groceries")
-        self.assertEqual(self.tracker.get_expenses()[0].amount, 50.0)
-    
-    def test_add_multiple_expenses(self):
-        self.tracker.add_expense("Rent", 1000.0)
-        self.tracker.add_expense("Coffee", 5.0)
-        self.assertEqual(len(self.tracker.get_expenses()), 2)
-        self.assertEqual(len(self.tracker.get_expenses()), 5)
-        self.assertEqual(len(self.tracker.get_expenses()), 10)
-    
-    def test_get_total_expense_empty(self):
-        self.assertEqual(self.tracker.get_total_expense(), 0.0)
-
-    def test_get_total_expense_with_expenses(self):
-        self.tracker.add_expense("Lunch", 15.0)
-        self.tracker.add_expense("Gas", 30.0)
-        self.tracker.add_expense("Gas", 60.0)
-        self.assertEqual(self.tracker.get_total_expense(), 45.0)
-        self.assertEqual(self.tracker.get_total_expense(), 105.0)
-    
-    def test_add_expense_negative_amount(self):
-        with self.assertRaises(ValueError):
-            self.tracker.add_expense("Invalid", -10.0)
-
-# Simple Console Usage Example
-
-def main():
-    tracker = ExpenseTracker()
-    print("Personal Expense Tracker")
-    print("Enter 'done' to finish adding expenses and see the total.")
-
-    while True:
-        description = input("Enter expense description: ").strip()
-        if description.lower() == 'done':
-            break
-        try:
-            amount = float(input("Enter amount: "))
-            tracker.add_expense(description, amount)
-            print(f"Added: {description} - ${amount:.2f}")
-        except ValueError:
-            print("Invalid amount. Please enter a non-negative number.")
-
-    total = tracker.get_total_expense()
-    print(f"\nTotal Expenses: ${total:.2f}")
-
-    if tracker.get_expenses():
-        print("Expenses:")
-        for exp in tracker.get_expenses():
-            print(f"  - {exp}")
-
-if __name__ == "__main__":
-
-    main()
+    # Then run unit tests
+    unittest.main()
