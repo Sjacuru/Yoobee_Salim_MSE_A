@@ -32,10 +32,12 @@ User Details:
 
 ---Instructions---
 Give a structured itinerary with the place`s name, address and a short description for each day 
-separately in order, with a maximum of three activities per day, considering visits, if available
-to the main and well known actyvties of the city. Ensure Ensure there is a balance 
-between guided tours and free time for exploration. Each day should have suggestions for breakfast, 
+separately in order, with a maximum of ***TWO*** activities per day, considering visits, if available,
+to the ***main and well known activities of the city***. Ensure there is a balance between 
+guided tours and free time for exploration. Each day should have suggestions for breakfast, 
 lunch, and dinner, with brief descriptions of each activity and restaurant.
+
+explore the city's highlights and vibrant atmosphere
 
 ---Context---
 Consider the traveller has never been to chosen city before and wants to experience both the well-known and hidden
@@ -43,7 +45,7 @@ gems of the city. They are particularly interested in the history of the city. T
 transport and enjoy walking tours.
 
 ---Negative Prompting---
-Do not include activities that are primarily for children or family, avoid overly touristy restaurants, and exclude
+Do not include MORE THAN ONE ATCIVITY IN THE FIRST AND LAST DAYS that are primarily for children or family, avoid overly touristy restaurants, and exclude
 any activities that require extensive travel outside of the chosen city.
 """
 
