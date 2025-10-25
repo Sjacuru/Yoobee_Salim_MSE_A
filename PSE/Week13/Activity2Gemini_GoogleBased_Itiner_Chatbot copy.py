@@ -3,8 +3,8 @@ from google.genai import client as genai_client
 from google.genai import types as genai_types
 from google import genai
 
-# API_KEY = "AIzaSyDIiqaYvnvVzn-2R5g8z1kTy9TWp0iP6Mg"
-API_KEY = os.environ.get("GEMINI_API_KEY") or "AIzaSyDIiqaYvnvVzn-2R5g8z1kTy9TWp0iP6Mg"
+# API_KEY = ""
+API_KEY = os.environ.get("GEMINI_API_KEY") or ""
 
 if not API_KEY:
     raise RuntimeError("Set GEMINI_API_KEY environment variable with your Gemini API key.")
