@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <h1>🌡️ Temperature Converter</h1>
+
+    <form method="POST">
+        <label>Value:</label>
+        <input type="text" name="value" value="{{ value or '' }}" required>
+        <br><br>
+
+        <label>From:</label>
+        <select name="from_unit">
+            <option value="Celsius" {% if from_unit == 'Celsius' %}selected{% endif %}>Celsius</option>
+            <option value="Fahrenheit" {% if from_unit == 'Fahrenheit' %}selected{% endif %}>Fahrenheit</option>
+            <option value="Kelvin" {% if from_unit == 'Kelvin' %}selected{% endif %}>Kelvin</option>
+        </select>
+
+        <label>To:</label>
+        <select name="to_unit">
+            <option value="Celsius" {% if to_unit == 'Celsius' %}selected{% endif %}>Celsius</option>
+            <option value="Fahrenheit" {% if to_unit == 'Fahrenheit' %}selected{% endif %}>Fahrenheit</option>
+            <option value="Kelvin" {% if to_unit == 'Kelvin' %}selected{% endif %}>Kelvin</option>
+        </select>
+
+        <br><br>
+        <button type="submit">Convert</button>
+    </form>
+
+    {% if result is not none %}
+        <h2>Result: {{ value }} {{ from_unit }} = {{ result }} {{ to_unit }}</h2>
+    {% endif %}
+</body>
+</html>
