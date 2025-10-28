@@ -4,14 +4,14 @@ from google.genai import types as genai_types
 from google import genai
 
 # API_KEY = ""
-API_KEY = os.environ.get("GEMINI_API_KEY") or ""
+API_KEY = os.environ.get("GEMINI_API_KEY") or "AIzaSyDIiqaYvnvVzn-2R5g8z1kTy9TWp0iP6Mg"
 
 if not API_KEY:
     raise RuntimeError("Set GEMINI_API_KEY environment variable with your Gemini API key.")
 
 # client
 client = genai.Client(api_key=API_KEY) 
-
+    
 def instructor_chatbot():
     """Command-line AI Itinerary Chatbot using Gemini (google-genai)."""
     print("Welcome to AI Itinerary recommender! Answer a few questions to get personalized itinerary advice.\n")
