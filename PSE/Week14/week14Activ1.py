@@ -9,16 +9,15 @@ def log_decorator(func):
     def wrapper(*args, **kwargs):
         print('Step 2')
         print(f"Calling {func.__name__} with {args}, {kwargs}")
-        print('Step 3')
         result = func(*args, **kwargs)
         print(f"{func.__name__} returned {result}")
         return result
-    print('Step 4')
+    print('Step 3')
     return wrapper
     
 @log_decorator
 def add(a, b):
-        print('Step 5')
+        print('Step 4')
         return a + b
         
 def main():
