@@ -1,7 +1,7 @@
 
 '''
 THe decorator takes a function that takes another function as an 
-argument, returning a new function preserving the code.
+argument, returning a new function extending its functionality.
 '''
 
 def log_decorator(func):
